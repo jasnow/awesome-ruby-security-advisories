@@ -17,35 +17,35 @@ A. Apply for new CVEs for existing non-CVE advisories.
      - RAD#272: "Add advisory for will_paginate"
      - RAD#377: "Add advisory for intercom-rails"
 
-  B. Create advisories for exisiting CVEs into existing databases such as RAD, <TBD>.
-     - Output of "A." activities
-     - RAD#238: Got-CVE-Need-Advisory (BACKLOG)
+B. Create advisories for exisiting CVEs into existing databases such as RAD, <TBD>.
+   - Output of "A." activities
+   - RAD#238: Got-CVE-Need-Advisory (BACKLOG)
 
-  C. Encourage OSV-SCHEMA(#123) to include more than Rubygem advisories
-     - Such as "rubies" (Ruby languages)
-     - Example: "Unreviewed" GHSA Advisories (??)
-       - Example: https://github.com/ossf/osv-schema/issues/123
+C. Encourage OSV-SCHEMA(#123) to include more than Rubygem advisories
+   - Such as "rubies" (Ruby languages)
+   - Example: "Unreviewed" GHSA Advisories (??)
+     - Example: https://github.com/ossf/osv-schema/issues/123
 
-  D. Add additional known data to existing advisories.
-     - Example: GH/jasnow's 11 GHSA PRs
+D. Add additional known data to existing advisories.
+   - Example: GH/jasnow's 11 GHSA PRs
 
-  E. Organize special events for Advisorty-related improvements.
-     - Participate in "AppDev" village at Defcon/2023
-     - Participae in 2023 Octotofest (month long event)
-     - Participae in 2023 24pullrequests (24 PRs in 24 days in December
-     - Participate in RailsConf/2023
-     - Participate in RubyConf/2023
-     - Google Summer of Code (2024)
-     - Ruby Community "Adversary Hack" Days
+E. Organize special events for Advisorty-related improvements.
+   - Participate in "AppDev" village at Defcon/2023
+   - Participae in 2023 Octotofest (month long event)
+   - Participae in 2023 24pullrequests (24 PRs in 24 days in December
+   - Participate in RailsConf/2023
+   - Participate in RubyConf/2023
+   - Google Summer of Code (2024)
+   - Ruby Community "Adversary Hack" Days
 
-  F. HUB: Create central location for "Ruby Community" Adversary News.
+F. HUB: Create central location for "Ruby Community" Adversary News.
 
-  G. Create/support tools/databases to support above advisory activities.
+G. Create/support tools/databases to support above advisory activities.
 
-  H. Follow the Forks (maybe not just the Rubygem.org's link repo)
+H. Follow the Forks (maybe not just the Rubygem.org's link repo)
 
-  Y. Research other data sources.
+Y. Research other data sources.
 
 ...................................................................
 
-  Z. Get Paid.
+Z. Get Paid.
