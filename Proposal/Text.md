@@ -5,7 +5,7 @@
    - Only existing/known/legacy vulnerabilities (brand new  ones are covered by project' "security policies")
    - Mostly Remote work based
   
-* Examples of Activiites Involved
+# Examples of Activiites Involved
 
   A. Apply for new CVEs for existing non-CVE advisories.
      - Example:
