@@ -7,15 +7,15 @@
   
 # Examples of Activiites Involved
 
- A. Apply for new CVEs for existing non-CVE advisories.
-    - Example:
-      - RAD's OSDVB adversaries (62 files)
-      - RAD#487: s/OSVDB/CVE/
-      - RAD#228: Ruby-lang (iss => CVE => ADV)
-      - RAD#350: "patched_versions for rubyzip CVE-2018-1000544.yml"
-      - RAD#289: "guard-livereload security vulnerability"
-      - RAD#272: "Add advisory for will_paginate"
-      - RAD#377: "Add advisory for intercom-rails"
+A. Apply for new CVEs for existing non-CVE advisories.
+   - Example:
+     - RAD's OSDVB adversaries (62 files)
+     - RAD#487: s/OSVDB/CVE/
+     - RAD#228: Ruby-lang (iss => CVE => ADV)
+     - RAD#350: "patched_versions for rubyzip CVE-2018-1000544.yml"
+     - RAD#289: "guard-livereload security vulnerability"
+     - RAD#272: "Add advisory for will_paginate"
+     - RAD#377: "Add advisory for intercom-rails"
 
   B. Create advisories for exisiting CVEs into existing databases such as RAD, <TBD>.
      - Output of "A." activities
