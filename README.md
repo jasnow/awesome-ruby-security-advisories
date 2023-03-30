@@ -1,6 +1,6 @@
 # awesome-ruby-security-advisory-info
 
-#Resources regarding Awesome Ruby Security Advisory Information
+# Resources regarding Awesome Ruby Security Advisory Information
 
 ## [Feeds](Feeds)
 ## [Chats](Chats)
