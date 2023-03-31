@@ -44,6 +44,8 @@ G. Create/support tools/databases to support above advisory activities.
 
 H. Follow the Forks (maybe not just the Rubygem.org's link repo)
 
+R. Collecting Stats/Reporting 
+
 Y. Research other data sources.
 
 ...................................................................
