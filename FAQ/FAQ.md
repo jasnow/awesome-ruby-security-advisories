@@ -49,6 +49,7 @@
     j. "date:" - (Required; YYYY/MM/DD) Use the public announcement/
        disclosure date of the advisory. Try to use the announcement
        URL since CVE may be blank when announced.
+       Fallback is the "nvd_published_at" date at NVD "url:".
        - Example: 2019-07-02
 
     k. "description:" - (Required/String) One or more paragraphs
@@ -109,6 +110,7 @@ description: |
   GHSA's ECOSYSTEM:
   GHSA's PACKAGE NAME:
   GHSA's CWE:
+  GHSA's CWE SEVERITY:
 cvss_v2:
 cvss_v3:
 unaffected_versions:
