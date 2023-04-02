@@ -10,7 +10,54 @@
     in the advisories but the vulnerability was not fixed, then
     the "patched_versions:" field should be "> LAST-VERSION-RELEASED".
 
- 3. Here's how I prefer to fill out a RAD advisory (YAML) file:
+ 3. Advisory PreReqs
+
+    a. CVE Link, such as cve.org, or cve.mitre.org, or 
+       - Example: https://nvd.nist.gov/vuln/detail/CVE-2013-7086
+
+    b. Announcement Link with source code changed and release version
+       - Example: https://www.ruby-lang.org/en/news/2023/03/30/redos-in-time-cve-2023-28756
+
+ 4. Here's how I prefer to fill out a GHSA advisory (YAML) file.
+
+    1. Go to https://github.com/advisories and enter [advisory ID] into search box.
+
+       - More info at: https://docs.github.com/en/code-security/security-advisories/global-security-advisories/browsing-security-advisories-in-the-github-advisory-database
+
+    2. Review advisory and see if you can improve it by changing or adding information.
+       You will see the current data for the advisory along with
+       - GHSA ID
+       - CVE ID
+       - NVD Publish Date
+       - GHSA Publish Date
+       - GHSA Review Date
+
+    3. If you see anything in step 2 to improve, go to  the bottom right
+       corner of the advisory and click on the **See something to
+       contribute? Suggest improvements for this vulnerability.** link.
+       - Title              - 1-line summary
+       - Description        - 1 or more Paragraphs of text
+       - References         - List of URLs
+       - Source Code        - Single URL
+       - (1 or more times)
+         - Ecosystem          - Menu, pick "RubyGems"
+         - Package            - Gem name, such as "bundler"
+         - Affected versions  - such as "< 1.2.3"
+         - Patched versions   - such as "1.2.3"
+       - Severity           - (calculate, such as "Critical 9.8")
+         - Also dropdown    - Choices: [Low, Moderate, High, Critical, Use CVSS]
+         - Vector string    - CVSS Vector (you can cut/paste from other data source)
+       - Common weakness enumerator (CWE) - a number associated awith the CWE
+       - Reason for change  - I usually use "Did more reseach. Connect the dots."
+
+    - You also have "Documentation", "Contribution Guidelines",
+      "About GitHub Advisory Database", and "Give feedback" on right side.
+
+      - GHSA's "Affected products" is defined by [ecosystem, package name, 
+        affected/patched versions, and vulnerable functions for the 
+        security vulnerability that the security advisory describes].
+
+ 5. Here's how I prefer to fill out a ruby-advisory-db advisory (YAML) file:
 
     a. "gem:" (Required/String) Use the name of the affected 
        gem at https://rubygems.org/search?query=GEM"
@@ -55,6 +102,9 @@
     k. "description:" - (Required/String) One or more paragraphs
        describing the vulnerability, usually from the CVE link
        and/or announcement.
+       - GHSA say: "type a description of the security vulnerability
+         including its impact, any patches or workarounds available,
+         and any references"
 
     l. "cvss_v2:" - (Optional/Float) Use the CVVS(V2) score for 
        the vulnerability - Format: ##.#
@@ -111,7 +161,7 @@ description: |
   GHSA's SOURCE CODE LOCATION:
   GHSA's ECOSYSTEM:
   GHSA's PACKAGE NAME:
-  GHSA's CWE:
+  GHSA's CWE: (more info at: https://cwe.mitre.org/index.html)
   GHSA's CWE SEVERITY:
 cvss_v2:
 cvss_v3:
