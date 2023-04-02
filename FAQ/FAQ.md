@@ -32,6 +32,8 @@
        - GHSA Publish Date
        - GHSA Review Date
 
+       - Very good resource is: https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing/best-practices-for-writing-repository-security-advisories
+
     3. If you see anything in step 2 to improve, go to  the bottom right
        corner of the advisory and click on the **See something to
        contribute? Suggest improvements for this vulnerability.** link.
