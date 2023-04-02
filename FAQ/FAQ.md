@@ -77,7 +77,10 @@
        - ~> #.#.## (zero or more of these)
        - ">= #.#.#" (Last one needs to be ">=")
 
-    p. "related" (Optional/Hash Array String): Sometimes an advisory
+    r. "notes" (Optional/String): Internal notes regarding the
+       vulnerability's inclusion in this database.
+
+    q. "related" (Optional/Hash Array String): Sometimes an advisory
        references many urls and other identifiers. Supported keys:
        "cve:", "ghsa:", "osvdb:", and "url:".
 ```
@@ -85,5 +88,37 @@ related:
   url:
   - https://github.com/brianmario/yajl-ruby/blob/7168bd79b888900aa94523301126f968a93eb3a6/ext/yajl/yajl_buf.c#L64
 ```
-    q. "notes" (Optional/String): Internal notes regarding the
-       vulnerability's inclusion in this database.
+
+Sample Template:
+```
+---
+gem: xor engine:
+library:
+framework:
+platform:
+cve:
+osvdb:
+ghsa:
+url:
+title:
+date:
+description: |
+  TBD
+
+  GHSA's SOURCE CODE LOCATION:
+  GHSA's ECOSYSTEM:
+  GHSA's PACKAGE NAME:
+  GHSA's CWE:
+cvss_v2:
+cvss_v3:
+unaffected_versions:
+ - 'TBD'
+patched_versions:
+ - 'TBD'
+related:
+ cve:
+  - TBD
+ url:
+  - TBD
+# Comments start with "#" followed by space.
+```
