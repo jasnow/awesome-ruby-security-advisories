@@ -179,3 +179,24 @@ related:
   - TBD
 # Comments start with "#" followed by space.
 ```
+
+ 6. GSD#185: 
+    - The pull down for reference type lists the various types e.g. 
+      WEB, REPORT, FIX, etc. it would be nice to have tooltips popup
+      what each one means. The text from 
+      https://ossf.github.io/osv-schema/#references-field would be great:
+    - The known reference type values are:
+      - ADV#: ADVISORY: A published security advisory for the vulnerability.
+      - ARTICLE: An article or blog post describing the vulnerability.
+      - ANNOUNCEMENTREPORT: A report, typically on a bug or issue
+        tracker, of the vulnerability.
+      - COMMIT: FIX: A source code browser link to the fix (e.g., a GitHub 
+        commit) Note that the fix type is meant for viewing by people
+        using web browsers. Programs interested in analyzing the exact
+        commit range would do better to use the GIT-typed affected[].ranges
+        entries (described above).
+      - SOURCE LOCATION/PACKAGE: A home web page for the package.
+      - EVIDENCE: A demonstration of the validity of a vulnerability
+        claim, e.g. app.any.run replaying the exploitation of the vulnerability.
+      - WEB: A web page of some unspecified kind.
+    - From: https://github.com/cloudsecurityalliance/gsd-tools/issues/185
