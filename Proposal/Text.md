@@ -1,9 +1,31 @@
 # Support for Security Advisory Data Scientist for Ruby Community
 
+Hi,
+
+I propose that the "Ruby Shield" program create a 
+"Security Advisory Data Scientist" who focuses on
+legacy Ruby-related advisories.
+
+I have created a draft outline to suggest what the scope might be.
+
+I have been helping out on several advisory projects over
+the last few months and have learned about this niche.
+
+Feel free to contact me to discuss this proposal further.
+Other people to contact could be @postmodern on GitHub.
+
+Thanks,
+Al Snow
+404-939-0122
+al@RailsUpToDate.com
+@jasnow on GitHub
+
+......................................................................
+
 ## Scope
-   - Focus on becoming a first class citizen in the software security advisory community.
-   - Only existing/known/legacy vulnerabilities (brand new  ones are covered by project' "security policies")
-   - Mostly Remote work based
+ - Focus on becoming a first class citizen in the software security advisory community.
+ - Only existing/known/legacy vulnerabilities (brand new ones are covered by project's "security policies")
+ - Remote work based except for Ruby-related events
   
 # Examples of Activiites Involved
 
@@ -17,13 +39,13 @@ A. Apply for new CVEs for existing non-CVE advisories.
      - RAD#272: "Add advisory for will_paginate"
      - RAD#377: "Add advisory for intercom-rails"
 
-B. Create advisories for exisiting CVEs into existing databases such as RAD, <TBD>.
+B. Create advisories for exisiting CVEs without advisories. Then to add them to an advisory database.
    - Output of "A." activities
    - RAD#238: Got-CVE-Need-Advisory (BACKLOG)
 
-C. Encourage OSV-SCHEMA(#123) to include more than Rubygem advisories
+C. Encourage OSV-SCHEMA project (#123) to include more than Rubygem advisories.
    - Such as "rubies" (Ruby languages)
-   - Example: "Unreviewed" GHSA Advisories (??)
+   - Example: "Unreviewed" GHSA Advisories
      - Example: https://github.com/ossf/osv-schema/issues/123
 
 D. Add additional known data to existing advisories.
@@ -37,17 +59,31 @@ E. Organize special events for Advisorty-related improvements.
    - Participate in RubyConf/2023
    - Google Summer of Code (2024)
    - Ruby Community "Adversary Hack" Days
+   - Run advisory training sessions at conferences.
 
-F. HUB: Create central location for "Ruby Community" Adversary News.
+F. HUB: Create central location for "Ruby Community" Adversary Information.
 
 G. Create/support tools/databases to support above advisory activities.
+   - GSD-related tools (RAD-to-GSD importer)
+   - RAD/SYNC2
 
 H. Follow the Forks (maybe not just the Rubygem.org's link repo)
+   - "DOESGEMEXIST" check
 
-R. Collecting Stats/Reporting 
+I. Conduct research in how to deal with dead links inside
+   advisories.
 
-Y. Research other data sources.
+R. Collecting Stats/Reporting
+   - RAD (ruby-advisory-db)
+   - GHSA (GitHub Security Advisories)
+   - GSD (Global Security Database)
 
 ...................................................................
 
+Y. Research other data sources than RAD/GHSA.
+   - GSD
+   - NVD Feed
+   - SUSE Feed
+
 Z. Get Paid.
+EOF
