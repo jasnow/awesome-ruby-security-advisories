@@ -1,9 +1,9 @@
-# Position: for Security Advisory Data Scientist for Ruby Community
+# Proposal: Position: Security Advisory Data Scientist for Ruby Community
 
-Hi,
+Mr. X,
 
 I propose that the "Ruby Shield" program create a 
-"Security Advisory Data Scientist" who focuses on
+"Security Advisory Data Scientist for Ruby Community" who focuses on
 legacy Ruby-related advisories.
 
 I have created a draft outline to suggest what the scope might be.
@@ -13,7 +13,11 @@ advisory projects and have learned about this niche.
 
 Feel free to contact me to discuss and help on this proposal.
 
-Thanks
+Thanks,
+Me
+Phone
+Email
+https://github.com/jasnow
 
 ......................................................................
 
@@ -56,7 +60,7 @@ E. Organize special events for Advisory-related improvements.
    - Ruby Community "Adversary Hack" Days
    - Run advisory training sessions at conferences.
 
-F. HUB: Create central location for "Ruby Community" Adversary Information.
+F. HUB: Create central location for "Ruby Community" Advisory Information.
 
 G. Create/support tools/databases to support above advisory activities.
    - GSD-related tools (RAD-to-GSD importer)
