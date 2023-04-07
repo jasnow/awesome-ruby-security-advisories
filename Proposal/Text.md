@@ -81,4 +81,3 @@ Y. Research other data sources than RAD/GHSA.
    - SUSE Feed
 
 Z. Get Paid.
-EOF
