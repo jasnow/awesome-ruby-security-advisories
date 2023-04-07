@@ -1,4 +1,4 @@
-# Support for Security Advisory Data Scientist for Ruby Community
+# Position: for Security Advisory Data Scientist for Ruby Community
 
 Hi,
 
