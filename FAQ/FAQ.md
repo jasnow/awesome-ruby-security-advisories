@@ -69,6 +69,7 @@
 
     c. "framework" (Optional/String) Use the name of the
        framework which the affected  gem belongs to.
+       - So far, only use case seen if to set this to "rails" for rails gemset.
 
     d. "platform" (Optional/String) If this vulnerability is platform-
        specific, name of platform this vulnerability affects (e.g. jruby).

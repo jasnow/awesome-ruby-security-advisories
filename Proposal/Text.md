@@ -8,11 +8,10 @@ legacy Ruby-related advisories.
 
 I have created a draft outline to suggest what the scope might be.
 
-I have been helping out on several advisory projects over
-the last few months and have learned about this niche.
+For the last few months, I have been helping out on several
+advisory projects and have learned about this niche.
 
-Feel free to contact me to discuss this proposal further.
-Other people to contact could be @postmodern on GitHub.
+Feel free to contact me to discuss and help on this proposal.
 
 Thanks,
 Al Snow
@@ -27,7 +26,7 @@ al@RailsUpToDate.com
  - Only existing/known/legacy vulnerabilities (brand new ones are covered by project's "security policies")
  - Remote work based except for Ruby-related events
   
-# Examples of Activiites Involved
+# Examples of Activities Involved
 
 A. Apply for new CVEs for existing non-CVE advisories.
    - Example:
@@ -39,7 +38,7 @@ A. Apply for new CVEs for existing non-CVE advisories.
      - RAD#272: "Add advisory for will_paginate"
      - RAD#377: "Add advisory for intercom-rails"
 
-B. Create advisories for exisiting CVEs without advisories. Then to add them to an advisory database.
+B. Create advisories for existing CVEs without advisories. Then to add them to an advisory database.
    - Output of "A." activities
    - RAD#238: Got-CVE-Need-Advisory (BACKLOG)
 
@@ -51,10 +50,10 @@ C. Encourage OSV-SCHEMA project (#123) to include more than Rubygem advisories.
 D. Add additional known data to existing advisories.
    - Example: GH/jasnow's 11 GHSA PRs
 
-E. Organize special events for Advisorty-related improvements.
+E. Organize special events for Advisory-related improvements.
    - Participate in "AppDev" village at Defcon/2023
-   - Participae in 2023 Octotofest (month long event)
-   - Participae in 2023 24pullrequests (24 PRs in 24 days in December
+   - Participate in 2023 Octotofest (month long event)
+   - Participate in 2023 24pullrequests (24 PRs in 24 days in December
    - Participate in RailsConf/2023
    - Participate in RubyConf/2023
    - Google Summer of Code (2024)
