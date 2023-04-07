@@ -13,11 +13,7 @@ advisory projects and have learned about this niche.
 
 Feel free to contact me to discuss and help on this proposal.
 
-Thanks,
-Al Snow
-404-939-0122
-al@RailsUpToDate.com
-@jasnow on GitHub
+Thanks
 
 ......................................................................
 
