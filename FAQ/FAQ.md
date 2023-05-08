@@ -1,9 +1,18 @@
 # FAQ - Frequently Asked Questions
 
+ 0. PR Confidence metric:
+    * MUST HAVE commit URL (+3) OR PR URL (+2) OR
+      Announcement URL with patches (+2) for main "url:" field,
+    * AND nvd or equivalent URL (+1)
+    * AND CHECK for rubygems.org URL for "gems" files (+1).
+
  1. If you have a repo, including one associated with a "gem", and 
     there are not releases (GitHub "tags") after the one mentioned
     in the advisories then the "patched_versions:" field should
     be "> LAST-VERSION-RELEASED".
+
+    * 5/7/2023: Update by Postmodern: "If there is truly no patch
+      versions, then we should omit "patched_versions" field."
 
  2. If you have a repo, including one associated with a "gem", and 
     there are releases (GitHub "tags") after the one mentioned
