@@ -2,6 +2,8 @@
 
 ## Resources regarding Awesome Ruby Security Advisory Information
 
+### [FAQ](FAQ)
+
 ### [Feeds](Feeds)
 
 ### [Chats](Chats)
