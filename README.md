@@ -1,6 +1,6 @@
-# awesome-ruby-security-advisory-info
+# more-ruby-security-advisory-info
 
-## Resources regarding Awesome Ruby Security Advisory Information
+## Resources regarding More Ruby Security Advisory Information
 
 ### [FAQ](FAQ/FAQ.md)
 
