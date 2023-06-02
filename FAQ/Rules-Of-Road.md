@@ -80,6 +80,12 @@ A current list of conventions follows:
 ## CONTEXT: Field: url
  * PREFERENCE: Probably covered by "spec" tests/starts with "http"
  * CHOICES: N/A
+ * SPECIAL NOTE: PR#613 Postmodern Feedback: [The primary url: should
+   ideally point to a web page with the advisory information, that
+   explains the impact. how to upgrade, etc. It's probably not very
+   user-friendly to link to raw GitHub code or commit diffs. If no
+   other suitable URL exists for the advisory, perhaps we could link
+   to the https://rubysec.com page for the advisory?]
  * EXAMPLE(S):
 ```
 url: https://github.com/unpoly/unpoly-rails/security/advisories/GHSA-m875-3xf6-mf78

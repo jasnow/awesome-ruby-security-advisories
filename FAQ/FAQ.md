@@ -101,6 +101,12 @@
 
     h. "url:" - (Required/String) Use the URL to the full advisory at
        - Example: https://nvd.nist.gov/vuln/detail/CVE-2013-7086
+       - Postmodern PR#613 Feedback: [The primary url: should ideally
+         point to a web page with the advisory information, that explains
+         the impact. how to upgrade, etc. It's probably not very
+         user-friendly to link to raw GitHub code or commit diffs.
+         If no other suitable URL exists for the advisory, perhaps we
+         could link to the https://rubysec.com page for the advisory?]
 
     i. "title:" - (Required/String) Use a one-line summary of the
        advisory or individual vulnerability probably from offical sources.
