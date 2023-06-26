@@ -1,8 +1,8 @@
 # FAQ - Frequently Asked Questions
 
  0. PR Confidence metric:
-    * MUST HAVE commit URL (+3) OR PR URL (+2) OR
-      Announcement URL with patches (+2) for main "url:" field,
+    * MUST HAVE Announcement URL with patches (+2) for main "url:" 
+     field (not commit URL (+3) OR PR URL (+2)),      
     * AND nvd or equivalent URL (+1)
     * AND CHECK for rubygems.org URL for "gems" files (+1).
 
@@ -13,6 +13,9 @@
 
     * 5/7/2023: Update by Postmodern: "If there is truly no patch
       versions, then we should omit "patched_versions" field."
+
+    * 6/26/2023: jasnow starting putting "nodes: 'Never Patched'" 
+      in place of "patched_versions" field when you have no patches.
 
  2. If you have a repo, including one associated with a "gem", and 
     there are releases (GitHub "tags") after the one mentioned
@@ -108,8 +111,9 @@
          If no other suitable URL exists for the advisory, perhaps we
          could link to the https://rubysec.com page for the advisory?]
 
-    i. "title:" - (Required/String) Use a one-line summary of the
-       advisory or individual vulnerability probably from offical sources.
+    i. "title:" - (Required/String) Use a one-line (no "title: |")
+       summary of the advisory or individual vulnerability probably
+       from offical sources.
 
     j. "date:" - (Required; YYYY/MM/DD) Use the public announcement/
        disclosure date of the advisory. Try to use the announcement
@@ -118,8 +122,8 @@
        - Example: 2019-07-02
 
     k. "description:" - (Required/String) One or more paragraphs
-       describing the vulnerability, usually from the CVE link
-       and/or announcement.
+       (yes "desciption: |") rdescribing the vulnerability, usually
+       from the CVE link and/or announcement.
        - GHSA say: "type a description of the security vulnerability
          including its impact, any patches or workarounds available,
          and any references"
@@ -129,31 +133,36 @@
        - More Info at: [CVSSv2](https://www.first.org/cvss/v2/guide)
        - Example: 5.0
 
-    m. "cvss_v3:" - (Optional/Float) Use the CVVS(V3) score for
-       the vulnerability - Format: ##.#
+    m. "cvss_v3:" - (Optional/Float) Use the CVVS(V3) or CVVS(V3.1)
+       score for the vulnerability - Format: ##.#
        - More Info at: [CVSSv3](https://www.first.org/cvss/user-guide)
        - Example: 7.5
 
-    n. "unaffected_versions" (Optional/Array of Strings): The version
+    n. "cvss_v4:" - (Optional/Float) Use the CVVS(V4) score for
+       the vulnerability - Format: ##.#
+       - More Info at: [CVSSv4](TBD)
+       - Example: 7.5
+
+    o. "unaffected_versions" (Optional/Array of Strings): The version
        requirements for unaffected versions of the Ruby library.
        Use the following format:
 ```
        - ~> #.#.## (zero or more of these)
        - ">= #.#.#" (Last one needs to be ">=")
 ```
-    o. "patched_versions" (Optional/Array of Strings): The version
+    p. "patched_versions" (Optional/Array of Strings): The version
        requirements for the patched versions of the Ruby library.
        Use the following format:
 ```
        - ~> #.#.## (zero or more of these)
        - ">= #.#.#" (Last one needs to be ">=")
 ```
-    r. "notes" (Optional/String): Internal notes regarding the
-       vulnerability's inclusion in this database.
+    q. "notes" (Optional/String): Internal notes regarding the
+       vulnerability's inclusion in this database. Only once.
 
-    q. "related" (Optional/Hash Array String): Sometimes an advisory
-       references many urls and other identifiers. Supported keys:
-       "cve:", "ghsa:", "osvdb:", and "url:".
+    r. "related" (Optional/Hash Array String): Sometimes an advisory
+       references many urls and other identifiers.
+       Supported keys: "cve:", "ghsa:", "osvdb:", and "url:".
 ```
 related:
   url:
@@ -183,6 +192,7 @@ description: |
   GHSA's CWE SEVERITY:
 cvss_v2:
 cvss_v3:
+cvss_v4:
 unaffected_versions:
  - 'TBD'
 patched_versions:

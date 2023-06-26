@@ -1,6 +1,9 @@
 # ruby-advisory-db PR Rules Of The Road
 
-All non-content conventions will be put into 3 buckets ("choices", "preference", "requirements") with the default **choices**. **preference** is the preferred item of the complete set of "choices". A "choice" becomes a **requirement** (should be fixed) if it is:
+All non-content conventions will be put into 3 buckets ("choices",
+"preference", "requirements") with the default **choices**. 
+**preference** is the preferred item of the complete set of "choices".
+A "choice" becomes a **requirement** (should be fixed) if it is:
 
  * [A] checked by "spec" test,
  * [B] created by **github_advisory_sync.rb** or similar importing scripts,
@@ -24,14 +27,15 @@ A current list of conventions follows:
    -- GE,    F, P, C, O, GH, U, T, DA, DE, C2, C3, U, P, R
 ```
 
-## CONTEXT: Length of lines
- * PREFERENCE: 80 characters
+## CONTEXT: (GENERAL) Length of lines
+ * PREFERENCE: 80 characters (no enforced)
  * CHOICES: Any length (max found is 624 characters)
  * EXAMPLE(S): Many example below.
 
-## CONTEXT: Type of quote characters
+## CONTEXT: (GENERAL) Type of quote characters
  * PREFERENCE: Double quotes    (785 lines ending with double quote)
- * SPECIAL NOTE: Exception: Can use single quotes when the text contains a period (".").
+ * SPECIAL NOTE: Exception: Can use single quotes when the text
+   contains a period (".") or ":".
  * CHOICES: Single quotes (425 lines ending with double quote)
  * EXAMPLE(S):
 ```
@@ -55,6 +59,7 @@ A current list of conventions follows:
 
 ## CONTEXT: Field: framework
  * PREFERENCE: Only known use is for "rails" gems
+ * SPECIAL NOTE: sync script now adds it for "rails"'s sub-gems.
  * CHOICES: N/A
  * EXAMPLE(S): framework: rails
 
@@ -127,9 +132,9 @@ description: backup-agoddard Gem for Ruby contains a flaw in /lib/backup/cli/uti
 .
 Also:
      51 description: |-
-      4 description: |+
-      3 description: |2
-      1 description: |2-
+      4 description: |+ (gone)
+      3 description: |2 (gone)
+      1 description: |2- (gone)
 ```
 
 ## CONTEXT: Field: cvss_v2
@@ -141,6 +146,11 @@ Also:
  * PREFERENCE: Probably covered by "spec" tests/single value (high score 10.0)
  * CHOICES: N/A
  * EXAMPLE(S): cvss_v3: 5.9
+
+## CONTEXT: Field: cvss_v4
+ * PREFERENCE: Probably covered by "spec" tests/single value (high score 10.0)
+ * CHOICES: N/A
+ * EXAMPLE(S): cvss_v4: 7.3
 
 ## CONTEXT: Field: patched_versions
  * PREFERENCE: List of version numbers prefixed by "~>", last one by ">"
@@ -156,7 +166,7 @@ Also:
      download/target the mruby version.
      * https://github.com/mruby/mruby/blob/3.2.0-rc/include/mruby/version.h#L60]
 ```
- * EXAMPLE(S):
+ * EXAMPLE(S): (with different operators)
 ```
 patched_versions
   - ~> 2.3.15
@@ -173,7 +183,7 @@ patched_versions
 ## CONTEXT: Field: unaffected_versions
  * PREFERENCE: List of version numbers prefixed by "~>", last one by ">"
  * CHOICES: single quotes, double quotes, no quotes around patched_Versions
- * EXAMPLE(S):
+ * EXAMPLE(S): (with different operators)
 ```
  unaffected_versions
 - ">= 1.9.3"
@@ -204,6 +214,7 @@ related:
 ## CONTEXT: Field: notes
  * PREFERENCE: Assume same rules as "description:" field.
  * SPECIAL NOTE: Make the sentence human-readable.
+   Can only be used once, but can be place anywhere in file.
  * CHOICES: N/A
  * EXAMPLE(S): (real examples)
 ```
