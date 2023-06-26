@@ -55,7 +55,7 @@ AL>> Get URL for RBX
  * Vulnerability Data
    * https://vuldb.com
    * https://www.kb.cert.org/vuls (SW ENG INSTITUTE/Vul Notes DB)
-   * https://www.whitesourcesoftware.com/vulnerability-database (Mend Vul DB)Bul
+   * https://www.whitesourcesoftware.com/vulnerability-database (Mend Vul DB)
    * http://jvn.jp (Japan Vul'y Notes)
    * https://snyk.io/vuln
      * https://security.snyk.io/vuln
