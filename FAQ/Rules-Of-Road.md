@@ -31,6 +31,7 @@ A current list of conventions follows:
 
 ## CONTEXT: Type of quote characters
  * PREFERENCE: Double quotes    (785 lines ending with double quote)
+ * SPECIAL NOTE: Exception: Can use single quotes when the text contains a period (".").
  * CHOICES: Single quotes (425 lines ending with double quote)
  * EXAMPLE(S):
 ```
@@ -93,6 +94,7 @@ url: https://github.com/unpoly/unpoly-rails/security/advisories/GHSA-m875-3xf6-m
 
 ## CONTEXT: Field: title
  * PREFERENCE: single line (no special chars, such as "|" or ">" after "title:") 
+ * SPECIAL NOTE: Exception: Can use single quotes when the text contains a period (".").
  * CHOICES: N/A
  * EXAMPLE(S): (check by "spec" tests)
 ```
