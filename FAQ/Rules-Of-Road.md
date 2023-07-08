@@ -183,6 +183,25 @@ patched_versions
 ## CONTEXT: Field: unaffected_versions
  * PREFERENCE: List of version numbers prefixed by "~>", last one by ">"
  * CHOICES: single quotes, double quotes, no quotes around patched_Versions
+ * SPECIAL NOTE:
+```
+   * Official Update: "ghsa: 333g-rpr4-7hxq - that's correct, we want
+     to match the lower-bound of the least vulnerableVersionRange."
+   * Given this as input:
+     -- vulnerableVersionRange: ">= 1.6.10, <= 1.6.13"
+        firstPatchedVersion:
+          identifier: 1.7.0
+     The correct/approved output is:
+        . unaffected_versions:
+        .   - "< 1.6.10"
+        . patched_versions:
+        .   - ">= 1.7.0"
+     Not:
+        . unaffected_versions:
+        .   - "< 1.6.10, > 1.6.13"
+        . patched_versions:
+        .   - ">= 1.7.0"
+```
  * EXAMPLE(S): (with different operators)
 ```
  unaffected_versions
