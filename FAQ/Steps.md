@@ -1,6 +1,6 @@
 # PROJECT ROBOT: 
 
-## Here are the current steps I go thourough to prepare a GHSA SYNC PR:
+## Here are the current steps I go through to prepare a GHSA SYNC PR:
 
 MANUAL
  * On GitHub, click on "Sync fork" to get upstream's commits.
@@ -19,7 +19,7 @@ RMBOTH.SH - (#647+#655 moves step 4 into step 3)
 
 RUNALLPP.SH + emacs/manual (does step 5) - #674/relate/url's,#650/style
  * Do post-processing on all modified and brand new advisories so
-   they are formated per ruby-advisory-db style rules and extra
+   they are formatted per ruby-advisory-db style rules and extra
    debugging lines added by sync script are removed.
 
 MANUAL
