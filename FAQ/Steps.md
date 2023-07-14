@@ -24,7 +24,21 @@ RUNALLPP.SH + emacs/manual (does step 5) - #674/relate/url's,#650/style
 
 MANUAL
  * Review and correct (Assume part of post-processing).
-
+   * Run "mkm" to append template to end of file.
+   * Check rubygems.org for "gem:" value
+   * Add "framework: rails" for sub-railis gems.
+   * Google for "cve:" or "ghsa:" values for more info.
+   * Better "url:" choice. (pickurl cmd)
+   * Review "title:" value.
+   * Use "url:" date for "date:" value if missing.
+   * Line wrap "title:" and "description:" fields.
+   * Use "nvd" url for cvss values. 
+   * Add "cvss_v2:" if missing.
+   * Review "unaffected_versions:" and "patched_versions"
+     values against debug lines. 
+   * Reorder "related:/url:" lines.
+   * Check "related:/url:" for dead links (#674)
+  
 MANUAL
  * Run "rake"/correct/repeat.
 
