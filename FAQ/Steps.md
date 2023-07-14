@@ -7,7 +7,7 @@ SYNCIT.SH
 
 ## In the ruby-advisory top directory:
 
-MANUAL
+MANUAL + GITB
  * Create git branch.
 
 GHIT.SH -- #637/RM-DEBUG-LINES/rejected
@@ -42,5 +42,5 @@ MANUAL
      11. Reorder "related:/url:" lines.
      12. Check "related:/url:" for dead links (#674)
   
-MANUAL
+MANUAL + "git add" + "git commit" + GPSO
  * git add, git commit, git push
