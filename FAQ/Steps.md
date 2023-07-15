@@ -1,37 +1,36 @@
-# PROJECT ROBOT: 
+# PROJECT SYNCBOT
 
 ## Here are the current steps I go through to prepare a GHSA SYNC PR:
 
+### In the ruby-advisory top directory:
+
 SYNCIT.SH
- * On GitHub, click on "Sync fork" to get upstream's commits.
+ * Sync GitHub (upstream) and local forks' commits.
 
-## In the ruby-advisory top directory:
-
-MANUAL + GITB
+GITB
  * Create git branch.
 
 GHIT.SH -- #637/RM-DEBUG-LINES/rejected
  * Run "bundle update" to get latest gems.
  * Run sync script (lib/github_advisory_sync.rb) with GitHub API Token mentioned above.
- * On July 14, 2023, ghit.sh created 17 files.
-   * On July 14, 2023, if you run "rake" at this point, you get 43 failures.
+   * On July 14, 2023, ghit.sh created 17 files.
+     * On July 14, 2023, if you run "rake" at this point, you get 43 failures.
 
 RMBOTH.SH - (#647+#655 moves step 4 into step 3)
  * Remove known duplicate advisories.
- * On July 14, 2023, rmboth.sh removed 11 files, leaving 6 files.
-
+   * On July 14, 2023, rmboth.sh removed 11 files, leaving 6 files.
 
 RUNALLPP.SH + emacs/manual (does step 5) - #674/relate/url's,#650/style
  * Do post-processing on all modified and brand new advisories so
    they are formatted per ruby-advisory-db style rules and extra
    debugging lines added by sync script are removed.
- * On July 14, 2023, if you run "rake" at this point, you get 1 failures.
-   * Then if you run "rm2.sh" and then "rake", you get 0 failures.
+   * On July 14, 2023, if you run "rake" at this point, you get 1 failures.
+     * Then if you run "rm2.sh" and then "rake", you get 0 failures.
 
-MANUAL
+MANUAL/LINT+REPAIR
  * Run "rake"/correct/repeat.
 
-MANUAL
+MANUAL/ASSUME ALL OPTIONAL.
  * Review and correct (Assume part of post-processing).
      1. Check rubygems.org for "gem:" value
      2. Run "mkm" to append template to end of file.
