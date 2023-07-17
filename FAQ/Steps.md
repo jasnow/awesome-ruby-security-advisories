@@ -3,7 +3,7 @@
 ## As of July 17, 2023, here is the new "fully" automated way to prepare a GHSA SYNC PR:
 
  * runsyncbot (which calls syncbot.sh and save stdout/stderr is $HOME/o_s)
- * chksyncbotout (to check o_s)
+ * chksyncbotout (to check $HOME/o_s)
 
 ## Here are the current semi-automated steps I go through to prepare a GHSA SYNC PR:
 
