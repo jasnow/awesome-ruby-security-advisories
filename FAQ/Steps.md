@@ -1,13 +1,18 @@
 # PROJECT SYNCBOT
 
-## Here are the current steps I go through to prepare a GHSA SYNC PR:
+## As of July 17, 2023, here is the new "fully" automated way to prepare a GHSA SYNC PR:
+
+ * runsyncbot (which calls syncbot.sh and save stdout/stderr is $HOME/o_s)
+ * chksyncbotout (to check o_s)
+
+## Here are the current semi-automated steps I go through to prepare a GHSA SYNC PR:
 
 ### In the ruby-advisory top directory:
 
 SYNCIT.SH
  * Sync GitHub (upstream) and local forks' commits.
 
-GITB
+AUTOGITB
  * Create git branch.
 
 GHIT.SH -- #637/RM-DEBUG-LINES/rejected
